@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/bgColor">
+
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/customToolbar">
+
+    </FrameLayout>
+
+    <!-- Custom Bottom NavBar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="4"
+        android:background="@color/bottomNav"
+        android:id="@+id/customToolbar"
+        android:layout_alignParentBottom="true">
+        <ImageButton
+            android:id="@+id/backButton1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_one"
+            android:background="?attr/selectableItemBackground"/>
+        <ImageButton
+            android:id="@+id/backButton2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_two"
+            android:background="?attr/selectableItemBackground"/>
+        <ImageButton
+            android:id="@+id/backButton3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_three"
+            android:background="?attr/selectableItemBackground"/>
+        <ImageButton
+            android:id="@+id/backButton4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_four"
+            android:background="?attr/selectableItemBackground"/>
+    </LinearLayout>
+
+</RelativeLayout>
